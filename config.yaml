@@ -1,0 +1,21 @@
+# Пути к данным
+data:
+  dish_csv: "data/dish.csv"
+  ingredients_csv: "data/ingredients.csv"
+  img_dir: "data/images"
+
+# Параметры модели
+model:
+  pretrained: true  # Использовать предобученные веса EfficientNet
+  save_path: "model_best.pth"  # Путь для сохранения модели
+
+# Параметры обучения
+training:
+  batch_size: 32
+  epochs: 50
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  num_workers: 4  # Количество процессов для загрузки данных
+
+# Воспроизводимость
+seed: 42
